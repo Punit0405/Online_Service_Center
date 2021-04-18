@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Online Service Center Management</title>
+  </head>
+  <body>
+    <header>
+
+        <img class="logo" src="img/logo.png" alt="logo">
+      <div>
+          <h1>Bring The Service Station <br> To Your Door Step!</h1>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li>Services
+              <ul>
+                <li><a href="#">Car</a></li>
+                <li><a href="#">Truck</a></li>
+                <li><a href="#">Bike</a></li>
+              </ul>
+            </li>
+          <li><a href="#">Parts</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="form-box">
+        <div class="btn-box">
+          <div id="btn"> </div>
+          <button type="button"class="toogle-btn" name="button" onclick="Login()">Login</button>
+          <button type="button"class="toogle-btn" name="button" onclick="signup()">Sign-up</button>
+        </div>
+
+        <form id="login"class="input-grp">
+          <input type="text" placeholder="Username" class="input-field" required>
+          <input type="password" placeholder="Enter Password" class="input-field" required>
+          <button type="submit" class="submit-btn" name="Login">Login</button>
+        </form>
+
+        <form id="signup" class="input-grp">
+          <input type="text" placeholder="Username" class="input-field" required>
+          <input type="email" placeholder="Enter E-mail" class="input-field" required>
+          <input type="password" placeholder="Enter Password" class="input-field" required>
+          <button type="submit" class="submit-btn" name="signup">Sign-up</button>
+        </form>
+
+      </div>
+
+      <script>
+          var x = document.getElementById("login");
+          var y = document.getElementById("signup");
+          var z = document.getElementById("btn");
+
+          function signup(){
+            x.style.left = "-400px";
+            y.style.left = "10px";
+            z.style.left = "110px";
+          }
+
+          function Login(){
+            x.style.left = "10px";
+            y.style.left = "-450px";
+            z.style.left = "0";
+          }
+
+
+
+      </script>
+
+
+    </header>
+
+  </body>
+</html>
